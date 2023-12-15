@@ -113,13 +113,13 @@ function install_cramfstools
 }
 
 
-function install_ubireader
-{
-    git clone --quiet --depth 1 --branch "master" https://github.com/onekey-sec/ubi_reader
-    (cd ubi_reader && $SUDO $PYTHON setup.py install)
-    $SUDO rm -rf ubi_reader
-}
-
+#function install_ubireader
+#{
+#    git clone --quiet --depth 1 --branch "master" https://github.com/onekey-sec/ubi_reader
+#    (cd ubi_reader && $SUDO $PYTHON setup.py install)
+#    $SUDO rm -rf ubi_reader
+#}
+#"""
 function install_pip_package
 {
     PACKAGE="$1"
@@ -240,7 +240,7 @@ install_pip_package "setuptools matplotlib capstone pycryptodome gnupg tk"
 install_sasquatch
 install_yaffshiv
 install_jefferson
-install_ubireader
+#install_ubireader
 
 if [ $distro_version = "18" ]
 then
