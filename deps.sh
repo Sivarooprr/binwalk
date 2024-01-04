@@ -84,7 +84,7 @@ function install_yaffshiv
 function install_sasquatch
 {
     #git clone --quiet --depth 1 --branch "master" https://github.com/devttys0/sasquatch
-    git clone --quiet --depth 1 --branch "master" https://github.com/Raxone/sasquatch_ubuntu_22.04
+    git clone https://github.com/Raxone/sasquatch_ubuntu_22.04
     (cd sasquatch_ubuntu_22.04 && $SUDO ./build.sh)
     $SUDO rm -rf sasquatch
 }
