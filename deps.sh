@@ -87,6 +87,7 @@ function install_sasquatch
     git clone https://github.com/Raxone/sasquatch_ubuntu_22.04
     #updated file permission
     (cd sasquatch_ubuntu_22.04 && $SUDO chmod +x ./build.sh)
+    $SUDO ./build.sh
     $SUDO rm -rf sasquatch
 }
 
